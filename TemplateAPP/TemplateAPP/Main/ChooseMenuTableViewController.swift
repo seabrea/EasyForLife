@@ -11,9 +11,20 @@ import UIKit
 class ChooseMenuTableViewController: UITableViewController {
 
     let cellTitleList = ["哔哩哔哩动画iOS APP"]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+    }
+    
+    private func moveToApp(_ index: Int) {
+        
+        switch index {
+        case 0:
+            TemplateAppTools.mainWindow().rootViewController = BilibiliTabBarController()
+        default:
+            return
+        }
     }
 
     // MARK: - Table view data source
@@ -37,6 +48,7 @@ class ChooseMenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        moveToApp(indexPath.section)
     }
 
 }

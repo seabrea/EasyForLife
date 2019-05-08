@@ -12,6 +12,13 @@
 		C4EAF1E422817C3D00298667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EAF1E322817C3D00298667 /* Assets.xcassets */; };
 		C4EAF1E722817C3D00298667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EAF1E522817C3D00298667 /* LaunchScreen.storyboard */; };
 		C4EAF1EF228180EF00298667 /* ChooseMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF1EE228180EF00298667 /* ChooseMenuTableViewController.swift */; };
+		C4EAF1F42282705800298667 /* BilibiliTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF1F32282705800298667 /* BilibiliTabBarController.swift */; };
+		C4EAF1F72282714800298667 /* TemplateAppTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF1F62282714800298667 /* TemplateAppTools.swift */; };
+		C4EAF1FE228275C500298667 /* BilibiliHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF1FD228275C500298667 /* BilibiliHomePageViewController.swift */; };
+		C4EAF2042282762300298667 /* BilibiliChannelPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF2032282762300298667 /* BilibiliChannelPageViewController.swift */; };
+		C4EAF206228276B400298667 /* BilibiliStoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF205228276B400298667 /* BilibiliStoryTableViewController.swift */; };
+		C4EAF208228276EF00298667 /* BilibiliMemberShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF207228276EF00298667 /* BilibiliMemberShoppingViewController.swift */; };
+		C4EAF20A2282772400298667 /* BilibiliUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EAF2092282772400298667 /* BilibiliUserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		C4EAF1E622817C3D00298667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4EAF1E822817C3D00298667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4EAF1EE228180EF00298667 /* ChooseMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMenuTableViewController.swift; sourceTree = "<group>"; };
+		C4EAF1F32282705800298667 /* BilibiliTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilibiliTabBarController.swift; sourceTree = "<group>"; };
+		C4EAF1F62282714800298667 /* TemplateAppTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAppTools.swift; sourceTree = "<group>"; };
+		C4EAF1FD228275C500298667 /* BilibiliHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilibiliHomePageViewController.swift; sourceTree = "<group>"; };
+		C4EAF2032282762300298667 /* BilibiliChannelPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilibiliChannelPageViewController.swift; sourceTree = "<group>"; };
+		C4EAF205228276B400298667 /* BilibiliStoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilibiliStoryTableViewController.swift; sourceTree = "<group>"; };
+		C4EAF207228276EF00298667 /* BilibiliMemberShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilibiliMemberShoppingViewController.swift; sourceTree = "<group>"; };
+		C4EAF2092282772400298667 /* BilibiliUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilibiliUserProfileViewController.swift; sourceTree = "<group>"; };
 		D0951BB8B4FF962944D2D06F /* Pods_TemplateAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +92,7 @@
 			children = (
 				C4EAF1F22281833300298667 /* BiliBili */,
 				C4EAF1F12281815100298667 /* Main */,
+				C4EAF1F5228270FC00298667 /* Tools */,
 				C4EAF1F02281813F00298667 /* Others */,
 			);
 			path = TemplateAPP;
@@ -105,8 +120,78 @@
 		C4EAF1F22281833300298667 /* BiliBili */ = {
 			isa = PBXGroup;
 			children = (
+				C4EAF202228275EA00298667 /* 我的 */,
+				C4EAF201228275E000298667 /* 会员购 */,
+				C4EAF200228275D800298667 /* 动态 */,
+				C4EAF1FF228275CB00298667 /* 频道 */,
+				C4EAF1F82282751000298667 /* 首页 */,
+				C4EAF1F32282705800298667 /* BilibiliTabBarController.swift */,
 			);
 			path = BiliBili;
+			sourceTree = "<group>";
+		};
+		C4EAF1F5228270FC00298667 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAF1F62282714800298667 /* TemplateAppTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C4EAF1F82282751000298667 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAF20C2282C31F00298667 /* Views */,
+				C4EAF20B2282C31100298667 /* ViewControllers */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		C4EAF1FF228275CB00298667 /* 频道 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAF2032282762300298667 /* BilibiliChannelPageViewController.swift */,
+			);
+			path = "频道";
+			sourceTree = "<group>";
+		};
+		C4EAF200228275D800298667 /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAF205228276B400298667 /* BilibiliStoryTableViewController.swift */,
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		C4EAF201228275E000298667 /* 会员购 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAF207228276EF00298667 /* BilibiliMemberShoppingViewController.swift */,
+			);
+			path = "会员购";
+			sourceTree = "<group>";
+		};
+		C4EAF202228275EA00298667 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAF2092282772400298667 /* BilibiliUserProfileViewController.swift */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		C4EAF20B2282C31100298667 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAF1FD228275C500298667 /* BilibiliHomePageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4EAF20C2282C31F00298667 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EAF206228276B400298667 /* BilibiliStoryTableViewController.swift in Sources */,
+				C4EAF1FE228275C500298667 /* BilibiliHomePageViewController.swift in Sources */,
+				C4EAF2042282762300298667 /* BilibiliChannelPageViewController.swift in Sources */,
 				C4EAF1DD22817C3B00298667 /* AppDelegate.swift in Sources */,
+				C4EAF208228276EF00298667 /* BilibiliMemberShoppingViewController.swift in Sources */,
 				C4EAF1EF228180EF00298667 /* ChooseMenuTableViewController.swift in Sources */,
+				C4EAF1F42282705800298667 /* BilibiliTabBarController.swift in Sources */,
+				C4EAF20A2282772400298667 /* BilibiliUserProfileViewController.swift in Sources */,
+				C4EAF1F72282714800298667 /* TemplateAppTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4YHU2GEWQ;
-				INFOPLIST_FILE = TemplateAPP/Info.plist;
+				INFOPLIST_FILE = TemplateAPP/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,7 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4YHU2GEWQ;
-				INFOPLIST_FILE = TemplateAPP/Info.plist;
+				INFOPLIST_FILE = TemplateAPP/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

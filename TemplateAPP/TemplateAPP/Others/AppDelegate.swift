@@ -13,10 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        createMainWindow()
+        let mainWindow = UIWindow.init(frame: UIScreen.main.bounds)
+        window = mainWindow
+        
+        let mainViewController = ChooseMenuTableViewController(style: .grouped)
+        mainWindow.rootViewController = mainViewController
+        
+        mainWindow.makeKeyAndVisible()
+        
         return true
     }
 
@@ -38,21 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
 
-    }
-
-
-}
-
-extension AppDelegate {
-    
-    private func createMainWindow() {
-        
-        let mainViewController = ChooseMenuTableViewController(style: .grouped)
-        
-        let mainWindow = UIWindow.init(frame: UIScreen.main.bounds)
-        mainWindow.backgroundColor = .white
-        mainWindow.rootViewController = mainViewController
-        mainWindow.makeKeyAndVisible()
     }
 }
 
