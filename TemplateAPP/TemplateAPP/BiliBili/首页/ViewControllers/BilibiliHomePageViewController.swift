@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import SnapKit
 
 class BilibiliHomePageViewController: UIViewController {
 
+    let collectionView: UICollectionView = UICollectionView.init(frame: CGRect.zero)
+    let collectionViewCellWidth: CGFloat = (TemplateAppTools.mainWindow().bounds.size.width - 50)/2
+    
     override func viewDidLoad() {
      
         super.viewDidLoad()
         self.view.backgroundColor = .white
         setupNavigationBar()
+        setupCollectionView()
     }
     
     private func setupNavigationBar() {
@@ -50,5 +55,39 @@ class BilibiliHomePageViewController: UIViewController {
         
         self.navigationItem.titleView = searchBtton
     }
+    
+    private func setupCollectionView() {
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        self.view.addSubview(collectionView)
+        collectionView.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
+        }
+    }
 
+}
+
+extension BilibiliHomePageViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: collectionViewCellWidth, height: collectionViewCellWidth)
+    }
+    
 }
