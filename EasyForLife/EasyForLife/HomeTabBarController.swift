@@ -12,6 +12,13 @@ import RAMAnimatedTabBarController
 class HomeTabBarController: RAMAnimatedTabBarController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        createTabBarControllers()
+    }
+    
+    private func createTabBarControllers() {
+        
+        print("create tabbarcontrollers")
     }
 }
