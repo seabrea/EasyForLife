@@ -1,6 +1,0 @@
-framework module Pods_TemplateAPP {
-  umbrella header "Pods-TemplateAPP-umbrella.h"
-
-  export *
-  module * { export * }
-}
