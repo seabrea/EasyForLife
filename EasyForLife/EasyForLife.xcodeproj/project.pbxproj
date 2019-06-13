@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44B25B58C7AF5AA9C1BB1167 /* Pods_EasyForLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCBCCE90D95750E2B09BBE6 /* Pods_EasyForLife.framework */; };
 		C44D6DFF22B23C9500ECB239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D6DFE22B23C9500ECB239 /* AppDelegate.swift */; };
 		C44D6E0622B23C9E00ECB239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44D6E0522B23C9E00ECB239 /* Assets.xcassets */; };
 		C44D6E0922B23C9E00ECB239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44D6E0722B23C9E00ECB239 /* LaunchScreen.storyboard */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BCBCCE90D95750E2B09BBE6 /* Pods_EasyForLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyForLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EFF7FE2EE35AABEAB53E312 /* Pods-EasyForLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyForLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyForLife/Pods-EasyForLife.release.xcconfig"; sourceTree = "<group>"; };
+		67890E70317445008D358D31 /* Pods-EasyForLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyForLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyForLife/Pods-EasyForLife.debug.xcconfig"; sourceTree = "<group>"; };
 		C44D6DFB22B23C9500ECB239 /* EasyForLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyForLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44D6DFE22B23C9500ECB239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44D6E0522B23C9E00ECB239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B25B58C7AF5AA9C1BB1167 /* Pods_EasyForLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08E2735634521D3263E2CACA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67890E70317445008D358D31 /* Pods-EasyForLife.debug.xcconfig */,
+				3EFF7FE2EE35AABEAB53E312 /* Pods-EasyForLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C44D6DF222B23C9500ECB239 = {
 			isa = PBXGroup;
 			children = (
 				C44D6DFD22B23C9500ECB239 /* EasyForLife */,
 				C44D6DFC22B23C9500ECB239 /* Products */,
+				08E2735634521D3263E2CACA /* Pods */,
+				F36A7F2929C1EE04A78F6312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +77,14 @@
 			path = EasyForLife;
 			sourceTree = "<group>";
 		};
+		F36A7F2929C1EE04A78F6312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BCBCCE90D95750E2B09BBE6 /* Pods_EasyForLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C44D6E0D22B23C9E00ECB239 /* Build configuration list for PBXNativeTarget "EasyForLife" */;
 			buildPhases = (
+				B776798848C11DE6B672CE00 /* [CP] Check Pods Manifest.lock */,
 				C44D6DF722B23C9500ECB239 /* Sources */,
 				C44D6DF822B23C9500ECB239 /* Frameworks */,
 				C44D6DF922B23C9500ECB239 /* Resources */,
+				273CB2A1FC9FDC206965F986 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +151,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		273CB2A1FC9FDC206965F986 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyForLife/Pods-EasyForLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyForLife/Pods-EasyForLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B776798848C11DE6B672CE00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyForLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C44D6DF722B23C9500ECB239 /* Sources */ = {
@@ -268,6 +335,7 @@
 		};
 		C44D6E0E22B23C9E00ECB239 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67890E70317445008D358D31 /* Pods-EasyForLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +355,7 @@
 		};
 		C44D6E0F22B23C9E00ECB239 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFF7FE2EE35AABEAB53E312 /* Pods-EasyForLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
