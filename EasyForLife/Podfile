@@ -1,0 +1,11 @@
+
+platform :ios, '10.0'
+
+target 'EasyForLife' do
+
+  use_frameworks!
+
+  pod 'RAMAnimatedTabBarController'
+  pod 'SnapKit'
+
+end

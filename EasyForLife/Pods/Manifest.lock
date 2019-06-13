@@ -1,0 +1,20 @@
+PODS:
+  - RAMAnimatedTabBarController (4.0.1)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - RAMAnimatedTabBarController
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RAMAnimatedTabBarController
+    - SnapKit
+
+SPEC CHECKSUMS:
+  RAMAnimatedTabBarController: 677d6f7ec7e88b1089486f4db49b0a5067e8ad1c
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: c8885ced1159d1cf28d0fb45019ab89c8d9162c4
+
+COCOAPODS: 1.5.2
