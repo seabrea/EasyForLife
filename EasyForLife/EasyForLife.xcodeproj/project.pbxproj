@@ -12,6 +12,11 @@
 		C44D6E0622B23C9E00ECB239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44D6E0522B23C9E00ECB239 /* Assets.xcassets */; };
 		C44D6E0922B23C9E00ECB239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44D6E0722B23C9E00ECB239 /* LaunchScreen.storyboard */; };
 		C44D6E1122B23EF600ECB239 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D6E1022B23EF600ECB239 /* HomeTabBarController.swift */; };
+		C44D6E1322B3315E00ECB239 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D6E1222B3315E00ECB239 /* SettingTableViewController.swift */; };
+		C44D6E1522B3319000ECB239 /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D6E1422B3319000ECB239 /* ContentTableViewController.swift */; };
+		C44D6E1722B336B600ECB239 /* ContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D6E1622B336B600ECB239 /* ContentDataModel.swift */; };
+		C44D6E1922B3372500ECB239 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D6E1822B3372500ECB239 /* ContentTableViewCell.swift */; };
+		C44D6E1B22B344A900ECB239 /* ContentData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C44D6E1A22B344A900ECB239 /* ContentData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		C44D6E0822B23C9E00ECB239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C44D6E0A22B23C9E00ECB239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C44D6E1022B23EF600ECB239 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		C44D6E1222B3315E00ECB239 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		C44D6E1422B3319000ECB239 /* ContentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewController.swift; sourceTree = "<group>"; };
+		C44D6E1622B336B600ECB239 /* ContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDataModel.swift; sourceTree = "<group>"; };
+		C44D6E1822B3372500ECB239 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		C44D6E1A22B344A900ECB239 /* ContentData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ContentData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,11 @@
 				C44D6E0722B23C9E00ECB239 /* LaunchScreen.storyboard */,
 				C44D6E0A22B23C9E00ECB239 /* Info.plist */,
 				C44D6E1022B23EF600ECB239 /* HomeTabBarController.swift */,
+				C44D6E1222B3315E00ECB239 /* SettingTableViewController.swift */,
+				C44D6E1422B3319000ECB239 /* ContentTableViewController.swift */,
+				C44D6E1622B336B600ECB239 /* ContentDataModel.swift */,
+				C44D6E1822B3372500ECB239 /* ContentTableViewCell.swift */,
+				C44D6E1A22B344A900ECB239 /* ContentData.plist */,
 			);
 			path = EasyForLife;
 			sourceTree = "<group>";
@@ -147,6 +162,7 @@
 			files = (
 				C44D6E0922B23C9E00ECB239 /* LaunchScreen.storyboard in Resources */,
 				C44D6E0622B23C9E00ECB239 /* Assets.xcassets in Resources */,
+				C44D6E1B22B344A900ECB239 /* ContentData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +214,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44D6E1322B3315E00ECB239 /* SettingTableViewController.swift in Sources */,
 				C44D6E1122B23EF600ECB239 /* HomeTabBarController.swift in Sources */,
+				C44D6E1522B3319000ECB239 /* ContentTableViewController.swift in Sources */,
 				C44D6DFF22B23C9500ECB239 /* AppDelegate.swift in Sources */,
+				C44D6E1722B336B600ECB239 /* ContentDataModel.swift in Sources */,
+				C44D6E1922B3372500ECB239 /* ContentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
